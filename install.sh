@@ -79,13 +79,9 @@ function start-up(){
 
   echo "$info_base started" >> $logfile
 
-  echo "$info_base setting display permissions to localhost" >> $logfile
-
-  sudo docker build -t $docker_img_name .
-
   echo "$info_base build image" >> $logfile
 
-  sudo docker run --rm -p 80:8080 $docker_img_name
+  sudo docker compose up --build
 
   echo "$info_base running image" >> $logfile
 
@@ -101,6 +97,8 @@ function tear-down(){
     echo "$info_base started" >> $logfile
 
     echo "$info_base services removed" >> $logfile
+
+    sudo docker compose down
 
     echo "$info_base ended" >> $logfile
 

@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<%@ taglib prefix="my" tagdir="/WEB-INF/tags" %>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,6 +15,9 @@
     </div>
     <div class="container">
         <% out.print("Hello from jsp"); %>
+    </div>
+    <div class="container">
+      <my:database querry="SELECT * FROM dog;" />
     </div>
     <div class="container" id="greet"/>  
     <div class="container">

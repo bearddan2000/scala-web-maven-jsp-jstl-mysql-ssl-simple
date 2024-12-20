@@ -1,0 +1,27 @@
+.item0 { grid-area: id-title;}
+.item1 { grid-area: breed-title; }
+.item2 { grid-area: color-title; }
+.item3 { grid-area: id; }
+.item4 { grid-area: breed; }
+.item5 { grid-area: dog-color; }
+
+.flex-container {
+    display: grid; /* or inline-flex */
+    /*border: 2px seashell;*/
+    grid-template-areas:'id-title breed-title color-title'
+                        'id-title breed-title color-title'
+                        'id breed dog-color';
+    gap: 3px;
+    padding: 2px;
+}
+
+.flex-container > div {
+    padding: 2px 1px;
+    text-align: center;
+    color: black;
+    background-color: powderblue;
+}
+span {
+    color: firebrick;
+    font-size: large;
+}

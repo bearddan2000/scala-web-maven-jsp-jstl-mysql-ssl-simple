@@ -1,12 +1,15 @@
-# scala-web-maven-springboot-jsp-hello-world
+# scala-web-maven-jsp-jstl-mysql-ssl-simple
 
 ## Description
 A POC for spring framework.
 
 ## Tech stack
 - spring boot
+- self signed
 
 ## Docker stack
+- alpine
+- maridb
 - maven:3-openjdk-17
 
 ## To run
